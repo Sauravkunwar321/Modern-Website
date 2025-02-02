@@ -1,0 +1,289 @@
+@font-face {
+    font-family: "Averta CY W10"; 
+    src: url(./AvertaCY-Bold.woff2);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Averta CY W10"; 
+    src: url(./AvertaCY-Light.woff2);
+    font-weight: 300; /* Light */
+}
+@font-face {
+    font-family: "Averta CY W10"; 
+    src: url(./AvertaCY-Regular.woff2);
+    font-weight: normal; /* Regular */
+}
+@font-face {
+    font-family: "Averta CY W10"; 
+    src: url(./AvertaCY-Semibold.woff2);
+    font-weight: 600; /* SemiBold */
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"Averta CY W10", sans-serif;
+    box-sizing: border-box;
+}
+
+
+*::selection{
+    background-color: #000;
+    color: white;
+}
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    background-color: white;
+
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+
+#nav{
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav img{
+    width: 100px;
+}
+
+#nav #right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#nav a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2vw;
+    color: black;
+    letter-spacing: -0.7px;
+}
+
+#nav i{
+    margin-top:3px;
+    font-size: 20px;
+}
+
+#home-main{
+    width: 100%;
+    padding: 13vw 16vw;
+}
+
+#home-main>h1{
+    font-weight: 400;
+    font-size: 1.3vw;
+    letter-spacing: -.1vw;
+}
+
+.headings{
+    display: flex;
+    gap: 40px;
+}
+
+.headings h1{
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing:-3px ;
+}
+
+#home-main .headings h1:hover{
+    color: #000;
+}
+
+#home-last{
+    padding: 5vw 16vw;
+}
+
+#home-last p{
+    font-size: 1.4vw;
+    font-weight: 200;
+    letter-spacing: -.08vw; 
+}
+
+#home-last p::selection{
+    background-color: #000;
+    color: white;
+}
+
+#featured{
+    padding: 10vw 15vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.f-heading>h1{
+    line-height: 1;
+    font-size: 4vw;
+    font-weight: 400;
+}
+.f-heading>h1:nth-child(2){
+   color: transparent;
+   -webkit-text-stroke: 1px #000;
+}
+
+#f-images{
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#f-left{
+    overflow: hidden;
+    width:45%;
+    height: inherit;
+    
+   
+    
+}
+
+.f-leftelem{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.f-leftelem h1{
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.5vw 0;
+}
+
+.f-leftelem h4{
+    opacity: 0.5;
+
+}
+
+.f-leftelem h3{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+#f-right{
+    width: 45%;
+    min-height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#f-right .images{
+    width: 90%;
+    height: 90%;
+    background-color: antiquewhite;
+    
+}
+
+#f-right .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button{
+    padding: 1vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid rgb(181, 181, 181);
+    background-color: white;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+
+#dev h1{
+    font-size: 3vw;
+    font-weight: 400;
+    width: 60%;
+    line-height: 1;
+}
+
+#dev p{
+    font-size: 1.2vw;
+    margin-top: 3vw;
+    letter-spacing: -.5px;
+    width: 50%;
+}
+
+#slides{
+    padding: 3vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.slide{
+    width: 30%;
+    overflow: hidden;
+}
+
+.slide .img{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide .tag{
+    width:fit-content ;
+    border-radius: 100px;
+    margin: 20px 0;
+    padding: 10px 22px;
+    background-color: #f7f7f7;
+}
+
+
+.slide h3{
+    font-size: 1.3vw;
+    font-weight: 400;
+    letter-spacing: -.4px;
+}

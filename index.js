@@ -40,6 +40,8 @@ Shery.mouseFollower({
   
   Shery.imageEffect(".images", {
     style: 5,
+    // config: {"onMouse": {"value": 1},
+    
     slideStyle: (setScroll) => {
       sections.forEach(function(section, index){
         ScrollTrigger.create({
@@ -47,7 +49,6 @@ Shery.mouseFollower({
             start: "top top",
             scrub: 1,
             onUpdate: function(prog){
-                console.log(prog);
                 setScroll(prog.progress+index);
 
             },
@@ -55,4 +56,7 @@ Shery.mouseFollower({
       });
     },
   });
+
+
+  
 // });
